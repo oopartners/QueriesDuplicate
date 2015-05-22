@@ -1,0 +1,30 @@
+<div class="zdt-toolbar-entry">
+    <div class="zdt-toolbar-preview">
+        <span class="zdt-toolbar-info">
+            <img style="height:22px" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABkAAAAZCAMAAADzN3VRAAABuVBMVEX///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////+cq/r8AAAAknRSTlMAAQIDBAYHCAkLDA0RExQVFhcYGRodHyAiIygpKiwuLzI2ODk6Oz0+QUJESUpNUVJVVldaXF1eYGJlZmhtb3BxdHV2eHl7fX6FhomKjI6Rk5eam5ygoaKjpKWmp6iprK2vsLG0tba4uru8wMHExcbHyMnLzM3O0NHS2Nzd3t/g4eLm5+jp6uvs7/Hy8/T2+Pv9/idFMa8AAAF5SURBVHjafZBlV2JRFIbfiygKKnZjjV1jBwYW6hg4YysGY9e1G7GGscDav9izvXIVP/h8eHc865x11sG3RBa2/XEsrcyPd9ekaqAixQ/ekMrzdrlWVZPkT5JqkhwP9MFxvcZ3YSAQW9n3Vz443FkeaskGQiQoRK2Yjfggy97ka8M8dLcx0F5b+rOioWf2lKjdZ4Jk8qcIPuIWP++vzNBI6gtybTvXT2LrdTrq9GDeXPRUjkh9Qlp6cnQQkNZi68iTwC8P99C6NT9WJ04bYJwiZs3EynDB/aPb5bwsMOwT2RPNRO4UvrD8nhS20S9yBtUi5QBJuETbCTH1eq/ILXTykAtEWIIBU1lz16+YAl458ZuLFTB6XV2ZOjBVvLrFNJdeIPS/qO7duYmxlB/EtJ5yNgFSN71j1f4TeWaXRb6YhEH1nmLOdY0iR1AsclT5Bm1G48CCvLmaiWGiI4udaCNUYqMiJouLiK77DPAT4FGfVZIfwd1XNEqyeAVbx5wwv0robwAAAABJRU5ErkJggg=="\>
+            SQL Duplicates
+        </span>
+    </div>
+    <div class="zdt-toolbar-detail">
+        <span class="zdt-toolbar-info">
+            <span class="zdt-detail-label">Total queries</span>
+            <span class="zdt-detail-value">
+                <?php echo $this->collector->getTotalQueries(); ?>
+            </span>
+        </span>
+
+        <span class="zdt-toolbar-info">
+            <span class="zdt-detail-label">SQL execution time</span>
+            <span class="zdt-detail-value">
+                <?php echo $this->collector->getTotalExecutionTime(); ?>
+            </span>
+        </span>
+
+        <span class="zdt-toolbar-info zdt-toolbar-detail-overflow" style="overflow-x: auto !important;">
+            <span class="zdt-detail-label">Details</span>
+            <span class="zdt-detail-value">
+                <?php echo $this->collector->getQueryDetail(); ?>
+            </span>
+        </span>
+    </div>
+</div>

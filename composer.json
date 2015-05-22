@@ -1,0 +1,26 @@
+{
+  "name":         "oopartners/duplicate-queries",
+  "description":  "A zend toolbar plugin to log SQL duplicate queries",
+  "type":         "library",
+  "license":      "MIT",
+  "homepage":     "https://github.com/oopartners/QueriesDuplicate",
+  "keywords": [
+    "zf2","SQL","queries","query","duplicate","time"
+  ],
+  "authors": [
+    {
+      "name":      "Beausse Guillaume",
+      "email":     "guillaume.beausse@oopartners.com",
+      "homepage":  "http://www.oopartners.com/",
+      "role":      "Developer"
+    }
+  ],
+  "require-dev": {
+    "zendframework/zend-developer-tools": "dev-master"
+  },
+  "autoload": {
+    "psr-0": {
+      "QueriesDuplicate": "src/"
+    }
+  }
+}
